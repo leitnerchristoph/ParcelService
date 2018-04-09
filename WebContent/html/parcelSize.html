@@ -1,0 +1,29 @@
+<div class="w3-panel w3-card-2">
+    <div class="w3-container w3-teal">
+        <h2>Paketgröße</h2> 
+    </div>
+
+    <form  class="w3-container" name="size_calc" ng-submit="$ctrl.calcSize()">
+        <label>Länge</label>
+        <input name="height" class="w3-input" data-ng-init="$ctrl.parcelsize.parcelheight = 1" data-ng-model="$ctrl.parcelsize.parcelheight"
+               type="number" required>
+        <label>Breite</label>
+        <input name="width" class="w3-input" data-ng-init="$ctrl.parcelsize.parcelwidth = 1" data-ng-model="$ctrl.parcelsize.parcelwidth"
+               type="number" required>
+        <label>Tiefe</label>
+        <input name="depth" class="w3-input" data-ng-init="$ctrl.parcelsize.parceldepth = 1" data-ng-model="$ctrl.parcelsize.parceldepth"
+               type="number" required>
+        <p>
+        <div class="w3-row">
+            <div class="w3-half">
+                <button class="w3-btn w3-teal" type="submit">Größe berechnen: </button>
+            </div>
+            <div class="w3-half">
+                <label class="w3-text-teal" type="submit">Paketgröße: </label>
+                <input class="w3-input" type="text" data-ng-model="parcelsize" disabled>
+            </div>
+        </div>
+        </p>
+    </form>
+
+</div>
