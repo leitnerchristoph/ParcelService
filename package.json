@@ -2,10 +2,9 @@
   "name": "parcelservice",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "rest.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,6 +17,7 @@
   },
   "homepage": "https://github.com/leitnerchristoph/ParcelService#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mongoose": "^5.0.16"
   }
 }
